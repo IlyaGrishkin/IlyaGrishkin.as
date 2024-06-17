@@ -1,0 +1,174 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: century gothic, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    margin-top: 9em;
+    background-color: black;
+    margin-bottom: 9em;
+}
+h1, h3{
+color: white;
+margin-top: 0;
+margin-bottom: 12px;
+}
+
+
+p {
+color: white;
+margin-top: 0;
+}
+
+h1 {
+font-size: 4em;
+}
+h3 {
+font-size: 2em;
+}
+
+/* Classes */
+
+.top {
+display: grid;
+grid-template-columns: repeat(14, 1fr);
+}
+.top>img {
+   grid-column: 4/7;
+   width: 220px;
+   border-radius: 20px;
+}
+.name {
+grid-column: 8/15;
+}
+.name img{
+width: 40px;
+}
+
+.location {
+display: flex;
+column-gap: 24px;
+margin-top: 35px;
+}
+.pos {
+}
+.location p{
+font-size: 28px;
+padding-top: 6px;
+}
+
+.bottom {
+   display: grid;
+   grid-template-columns: repeat(14, 1fr);
+   margin-top: 35px;
+}
+.contact {
+grid-column: 4/8;
+}
+
+.email p{
+color: white;
+font-size: 25px;
+margin-bottom: 0;
+}
+
+.bottom h4{
+color: white;
+font-size: 33px;
+margin-bottom: 28px;
+}
+.email img {
+width: 35px;
+height: 28px;
+}
+.email {
+display: flex;
+column-gap: 24px;
+margin-bottom: 20px;
+}
+.telegram {
+display: flex;
+column-gap: 24px;
+}
+.telegram img {
+width: 33px;
+height: 33px;
+}
+.telegram a{
+color: white;
+font-size: 25px;
+margin-bottom: 0;
+text-decoration: none;
+}
+.about-container{
+grid-column: 8/13;
+}
+.about-container p{
+font-size: 22px;
+}
+.about-container h4{
+margin-bottom: 20px;
+}
+.inspired{
+display: grid;
+grid-template-columns: repeat(14, 1fr);
+margin-top: 25px;
+}
+.miha{
+grid-column: 4/7;
+}
+.miha h4{
+color: white;
+font-size: 30px;
+margin-bottom: 15px;
+margin-top:0;
+}
+.miha a{
+color: white;
+font-size: 25px;
+text-decoration: none;
+}
+.line {
+border-top: 2px solid;
+color: white;
+width: 75%;
+}
+
+.line-2 {
+border-top: 2px solid;
+color: white;
+margin-bottom: 30px;
+}
+
+
+@media (min-width: 401px) and (max-width: 1335px) {
+    .name {
+    grid-column: 9/15;
+    }
+    .about-container {
+    grid-column: 9/14;
+    }
+    /*
+    .top h1 {
+    font-size: 2.5em
+    }
+    .top h3 {
+    font-size: 1.5em;
+    }
+    */
+}
+
+@media (min-width: 1800px) and (max-width: 5000px) {
+    .top>img {
+    width: 400px;
+    border-radius: 40px;
+    }
+    h1 {
+    font-size: 8em;
+    }
+    h3 {
+    font-size: 4em;
+}
+
